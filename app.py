@@ -80,6 +80,10 @@ def upload_csv():
     
     return jsonify({'error': 'Invalid file format. Please upload a CSV file.'}), 400
 
+# For local development
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5001))
-    app.run(host='0.0.0.0', port=port, debug=True) 
+    app.run(host='0.0.0.0', port=port, debug=True)
+
+# For Vercel deployment
+app = app 
