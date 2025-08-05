@@ -18,9 +18,5 @@
       "src": "/(.*)",
       "dest": "/app.py"
     }
-  ],
-  "env": {
-    "TOKEN_ADDRESS": "@token_address",
-    "BULK_CONTRACT_ADDRESS": "@bulk_contract_address"
-  }
+  ]
 }
